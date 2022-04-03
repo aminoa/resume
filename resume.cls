@@ -29,9 +29,9 @@
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
-    linkcolor=blue,
-    filecolor=magenta,      
-    urlcolor=cyan,
+    linkcolor=black,
+    filecolor=black,      
+    urlcolor=black,
 }
 
 \pagestyle{empty} % Suppress page numbers
@@ -75,7 +75,7 @@
 % \printname is used to print the name as a page header
 \def \printname {
   \begingroup
-    \hfil{\MakeUppercase{\namesize\bf \@name}}\hfil
+    \hfil{{\namesize\bf \@name}}\hfil
     \nameskip\break
   \endgroup
 }

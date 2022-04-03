@@ -3,122 +3,103 @@
 \usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
-\name{Firstname Lastname} % Your name
-% You can merge both of these into a single line, if you do not have a website.
-\address{+1(123) 456-7890 \\ San Francisco, CA} 
-\address{\href{mailto:youremailhere@gmail.com}{youremailhere@gmail.com} \\ \href{https://linkedin.com/in/linkedinURL}{linkedin.com/in/linkedinURL} \\ \href{www.github.com}{www.github.com}}  %
+\name{Aneesh Maganti} % Your name
 
+%This resume being made right now was from 12-26-2021, will change it but first translating it to a new format
+%Header
+\address { 
+    (312) 841-0636 • 
+    Brooklyn, NY • 
+    \href{mailto:aneesh.maganti@nyu.com}{aneesh.maganti@nyu.edu} • 
+    \href{github.com/aminoa}{github.com/aminoa}
+} 
 \begin{document}
 
 %----------------------------------------------------------------------------------------
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
+% Education
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Education}
-
-{\bf BBA in Computer Information Systems}, Texas State University \hfill {May 2022}\\
-GPA: 3.5
-%Minor in Linguistics \smallskip \\
-%Member of Eta Kappa Nu \\
-%Member of Upsilon Pi Epsilon \\
-
-
+    {\bf New York University, Tandon School of Engineering}, Brooklyn, NY \hfill {May 2024}\\
+    Bachelor of Science, Computer Science \hfill GPA: {\bf 3.7} \medskip \\
+    {\bf Relevant Courses:} {\emph {Algorithms, Computer Architecture, OOP, Linear Algebra and Differential Equations, Data Analysis}}
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-% TECHINICAL STRENGTHS	
+% Skills
 %----------------------------------------------------------------------------------------
+
 \begin{rSection}{SKILLS}
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Languages & Javascript, Python, HTML, CSS, PostgreSQL, GraphQL \\
-Frameworks & React, Redux, Node.js, Express, Django, Mocha \\
-Tools & Git, Docker, TravisCI, Kubernetes, AWS\\
-\\
-Soft Skills & Time Management, Teamwork, Communication, Problem Solving, Leadership, Accountability
-\\
-\end{tabular}\\
+• Programming Languages/Frameworks: C++, React, Django, JavaScript, NodeJS, Python, Qt, C\#, Java \newline
+• OS/Software Experience: Windows (APIs/UWP), Linux, SQL
+
+% \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+% Languages & Javascript, Python, HTML, CSS, PostgreSQL, GraphQL \\
+% Frameworks & React, Redux, Node.js, Express, Django, Mocha \\
+% Tools & Git, Docker, TravisCI, Kubernetes, AWS\\
+% \\
+% Soft Skills & Time Management, Teamwork, Communication, Problem Solving, Leadership, Accountability
+% \\
+% \end{tabular}\\
 \end{rSection}
 
+%----------------------------------------------------------------------------------------
+% Experience
+%----------------------------------------------------------------------------------------
+
+%Current doesn't have the proper spacing after the bullets but will fix later
+\begin{rSection}{EXPERIENCE}
+\textbf{\bf Monarc}, Dallas, TX, {\emph{Software Engineering Intern}} \hfill Aug 2021 - Present\\
+• Devised error checks and boot logging to improve Seeker performance and enable remote debugging \newline
+• Applied MVVM principles to develop new UI/UX features to enhance the Seeker machine feature-set
+\newline
+• Created unit tests for various views in the Monarc software to ensure QC prior to shipping software revisions
 
 
+\textbf{\bf High-Speed Research Network (HSRN/Corelink)}, NYU Holodeck, {\emph{Software Engineering Intern}} \hfill Sep 2021 - Present \\%font is too big here
+• Researched Corelink’s network architecture and RDMA/InfiniBand protocol to identify novel applications in Corelink infrastructure \newline
+• Ran memory tests to determine whether using RDMA would enable researchers to dramatically increase their current processes and analysis of data on the Corelink research network
+
+\textbf{\bf TEDxYouth@IMSA}, Illinois Mathematics and Science Academy, {\emph{Lead Developer}}  \hfill Feb 2019 - Dec 2019\\
+• Developed website with WordPress and JS/CSS for IMSA students to present TEDx sessions on campus \newline
+• Designed webpages for speakers that featured registration forms and information relevant to talk themes
+
+
+\end{rSection} 
 %----------------------------------------------------------------------------------------
 % Projects
 %----------------------------------------------------------------------------------------
 \begin{rSection}{PROJECTS}
-\vspace{-1.25em}
-\item \textbf{Project 1} {Language 1, Framework 1, Database, Language 2, Framework 2, DevOps Tooling} \hfill \href{www.github.com/GITHUBURL}{GitHub}
-\begin{itemize}
-    \itemsep -3pt {} 
-     \item Created a XYZ feature to accomplish ABC.
-     \item Retrieved data from XYZ to for ABC.
-    \item Implemented XYZ library for ABC.
-    \item Utilized XYZ that increased A by B\%.
- \end{itemize}
-\item \textbf{Project 2} {Language 1, Framework 1, Database, Language 2, Framework 2, DevOps Tooling} \hfill \href{www.github.com/GITHUBURL}{GitHub}
-\begin{itemize}
-    \itemsep -3pt {} 
-     \item Created a XYZ feature to accomplish ABC.
-     \item Retrieved data from XYZ to for ABC.
-    \item Implemented XYZ library for ABC.
-    \item Utilized XYZ that increased A by B\%.
- \end{itemize}
-\item \textbf{Project 3} {Language 1, Framework 1, Database, Language 2, Framework 2, DevOps Tooling} \hfill \href{www.github.com/GITHUBURL}{GitHub}
-\begin{itemize}
-    \itemsep -3pt {} 
-     \item Created a XYZ feature to accomplish ABC.
-     \item Retrieved data from XYZ to for ABC.
-    \item Implemented XYZ library for ABC.
-    \item Utilized XYZ that increased A by B\%.
- \end{itemize}
+\textbf{\bf Auto Daily Screener } \hfill Sep 2021 - Present \\%font is too big here
+• Built command line app to automate the NYU Daily Screener via Selenium web automation
+\newline
+• Designed a QT GUI for the application and used PyInstaller to build for Windows
+
+\textbf{\bf Concussion Detection Device Project }, Tandon School of Engineering \hfill Sep 2020 - Dec 2020 \\%font is too big here
+• Built Arduino-based IoT device to detect concussions for athletes using a pressure sensor
+\newline
+• Developed code to detect pressure levels, change device LED color, and send email to parents/guardians notifying them of potential injury to athlete
+
+\textbf{\bf Tandon Syllabi } \hfill October 2020 - Present \\%font is too big here
+• Wrote online repository for syllabi and other class materials for the NYU Tandon School of Engineering, using React for the frontend
+\newline
+• Currently has 8 syllabi hosted with the ability for students to add their own 
+
+\textbf{\bf Implemented Shortcut Feature in Dolphin } \hfill October 2020 - Present \\%font is too big here
+• Developed and implemented highly desired ‘Add Shortcut to Desktop’ feature to the open-source emulator Dolphin via the native Windows API, the Qt library, and C++
+\newline
+• Collaborated with other open-source contributors to refactor code and add it to Dolphin Emulator
+
+
 \end{rSection} 
 
-%----------------------------------------------------------------------------------------
 \begin{rSection}{Extra-Curricular Activities} 
-\begin{itemize}
-    \item 	Sample bullet point.
-    \item	Sample bullet point.
+\begin{itemize} %left this because there was space to do this
+    \item 	Osiris Club Member - Completed several online cybersecurity challenges, including reverse-engineering and decoding missions
+    \item	Rock Climbing at NYU Palladium - Train twice a week to increase endurance and complete new challenges
 \end{itemize}
 
 
 \end{rSection}
-
-%------------------------
-% Use this more detailed section if you have Relevant work experience
-% keep your resume to 1 page, if you need to remove a project to display relevant experience
-% that is okay
-% ----------------------------
-% \begin{rSection}{EXPERIENCE}
-
-% \textbf{Role Name} \hfill Jan 2017 - Jan 2019\\
-% Company Name \hfill \textit{San Francisco, CA}
-%  \begin{itemize}
-%     \itemsep -3pt {} 
-%      \item Achieved X\% growth for XYZ using A, B, and C skills.
-%      \item Led XYZ which led to X\% of improvement in ABC
-%     \item Developed XYZ that did A, B, and C using X, Y, and Z. 
-%  \end{itemize}
- 
-% \textbf{Role Name} \hfill Jan 2017 - Jan 2019\\
-% Company Name \hfill \textit{San Francisco, CA}
-%  \begin{itemize}
-%     \itemsep -3pt {} 
-%      \item Achieved X\% growth for XYZ using A, B, and C skills.
-%      \item Led XYZ which led to X\% of improvement in ABC
-%     \item Developed XYZ that did A, B, and C using X, Y, and Z. 
-%  \end{itemize}
-
-% \end{rSection} 
-
-\begin{rSection}{Work History}
-\vspace{-1.25em}
-\item \textbf{Job Title} {Company} \hfill Month Year - Month Year
-\item \textbf{Job Title} {Company} \hfill Month Year - Month Year
-\item \textbf{Job Title} {Company} \hfill Month Year - Month Year
-\end{rSection} 
-
-%----------------------------------------------------------------------------------------
-
-
 
 \end{document}

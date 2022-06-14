@@ -15,7 +15,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: Resume
-          path: Resume.pdf
+          path: resume.pdf
           
       - name: Get Time
         id: time

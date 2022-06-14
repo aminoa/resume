@@ -14,9 +14,42 @@ jobs:
       - name: Uploading artifact
         uses: actions/upload-artifact@v2
         with:
-          name: resume
-          path: resume.pdf
-      
+          name: Resume
+          path: Resume.pdf
+          
+      - name: Get Time
+        id: time
+        uses: nanzm/get-time-action@v1.1
+        with:
+          timeZone: 0
+          format: 'YYYY-MM-DD-HH-mm-ss'
+          
+      - name: Create Release
+        id: create_release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: Resume compiled on ${{ steps.time.outputs.time }}
+          tag_name: ${{ steps.time.outputs.time }}
+
+      - name: Upload Release Asset
+        id: upload-release-asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./Resume.pdf
+          asset_name:  "Aneesh Maganti Resume.pdf"
+          asset_content_type: application/pdf
+
+      - name: Setup PDF commit
+        id: commit
+        run: |
+          git config --local user.email "action[bot]@github.com"
+          git config --local user.name "github-actions[bot]"
+          git add Resume.pdf
+          git commit -m "Update PDF via bot"
+                
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:

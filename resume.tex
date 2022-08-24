@@ -5,9 +5,9 @@
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{Aneesh Maganti} % Your name
 
-%Header
+%Headers
 \address { 
-    (312) 841-0636 • 
+    (312) 841-0636 •    
     New York City, NY • 
     \href{mailto:aneesh.maganti@nyu.com}{aneesh.maganti@nyu.edu} • 
     \href{github.com/aminoa}{github.com/aminoa}
@@ -21,8 +21,8 @@
 
 \begin{rSection}{Education}
     {\bf New York University}, Tandon School of Engineering, Brooklyn, NY \hfill {May 2024}\\
-    Bachelor of Science, Computer Science \hfill GPA: {\bf 3.8} \\
-    {\emph {Relevant Courses:}} {Machine Learning, Algorithms, Operating Systems, Computer Architecture, OOP}
+    Bachelor of Science, Major in Computer Science \hfill GPA: {\bf 3.70} \\
+    {\emph {Relevant Courses:}} {Machine Learning, Software Engineering, Databases, Algorithms, Operating Systems}
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
@@ -31,9 +31,8 @@
 
 \begin{rSection}{SKILLS}
     \begin{tabular}{ @{} >{\bfseries}l @{\hspace{8ex}} l }
-        Languages & C++, Typescript, Python, Go, C\#, Java \\
-        Frameworks/Libraries & React, Node.js, Qt, SQL, Docker \\
-        Operating Systems & Windows, Unix \\
+        Languages & C++, Javascript, Python, Bash, C\#, Java, Powershell, Go \\
+        Frameworks/Libraries/OS & SDL, Qt, React, Node.js, PostgreSQL, Docker, Windows, Unix \\
     \end{tabular}
 \end{rSection}
 \smallskip
@@ -41,27 +40,35 @@
 % Experience
 %----------------------------------------------------------------------------------------
 
-%Current doesn't have the proper spacing after the bullets but will fix later
 \begin{rSection}{EXPERIENCE}
+
+\textbf{\bf MarketFusion}, {\emph{Software Engineering Intern}} \hfill July 2022 - Present\\
+• Revamped the login authentication system by implementing password strength checks and verification client-side via regex and server-side to ensure the security of the website. \newline
+• Rewrote React registration pages and user-creation process, sending a server request via the Axios library to update the internal MySQL database. \smallskip
+
+\textbf{\bf Corelink High-Speed Research Network}, {\emph{Academic Researcher}} \ \hfill Sep 2021 - Present \\%maybe designed and implemented? (didn't do that because it wnould take another line)
+• Researched the Corelink network infrastructure and implemented a network packet splitter for UDP connections \newline
+• Coordinated students and assisted them with the management of their projects \newline    
+• Researched Corelink’s network architecture and RDMA (Remote Direct Memory Access)/InfiniBand protocol and ran memory tests to determine the protocol's effectiveness for NYU researchers
 
 \textbf{\bf Monarc}, Dallas, TX, {\emph{Software Engineering Intern}} \hfill Aug 2021 - Jan 2022\\
 • Devised error checks and boot logging to improve Seeker performance and enable remote debugging \newline
 • Applied MVVM principles to develop new UI/UX features to enhance the Seeker machine feature-set \smallskip
-
-\textbf{\bf Corelink High-Speed Research Network}, {\emph{Academic Researcher}} \ \hfill Sep 2021 - Present \\%maybe designed and implemented? (didn't do that because it wnould take another line)
-• Researched the Corelink network infrastructure and implemented a network packet splitter for UDP connections \newline
-• Coordinated VIP students and assisted them with the management of their projects \newline
-• Researched Corelink’s network architecture and RDMA/InfiniBand protocol and ran memory tests to determine the protocol's effectiveness for NYU researchers
-
 \end{rSection} 
 %----------------------------------------------------------------------------------------
 % Projects
 %----------------------------------------------------------------------------------------
 \begin{rSection}{PROJECTS}
 
-\textbf{\bf NYU Syllabi } \hfill June 2022 \\
-• Wrote Next.js web application to provide easy access to syllabi across different fields at NYU \newline
-• Connected to AWS RDS PostgreSQL database, hosted on AWS S3 storage, and dockerized for deployment
+\textbf{\bf Chip8 Interpreter/Emulator } \hfill August 2022 \\
+• Designed interpreter for Chip8 platform by emulating all 35 standard opcodes and its specifications (registers, memory, timers), allowing Chip8 programs to run on an x86 platform \newline
+• Wrote separate disassembler to obtain assembly instructions from program binary data, assisting with development  \newline
+• Used SDL to write graphics renderer using SDL textures and handle user input \smallskip
+
+
+% \textbf{\bf NYU Syllabi } \hfill June 2022 \\
+% • Wrote Next.js web application to provide easy access to syllabi across different fields at NYU \newline
+% • Connected to AWS RDS PostgreSQL database, hosted on AWS S3 storage, and dockerized for deployment
 
 \textbf{\bf Alzheimer MRI Detection } \hfill May 2022 \\
 • Developed classification machine learning algorithm to sort preprocessed set of Alzheimer MRI images. 
@@ -76,14 +83,13 @@
 \textbf{\bf Interview Automation - HackNYU} \hfill February 2022 \newline
 • A Next.js application to assist with interviewing candidates for the NYU Corelink team by providing scheduling, quizzing and management services\newline
 • Wrote React pages for the question page, admin creation page, and applicant information \newline
-• Handled authentication via Auth0 configuration of NYU SSO logon  \newline
-• Connected to Gmail API to send emails on confirmation
+• Handled authentication via Auth0 configuration of NYU SSO logon
 
-\textbf{\bf Auto Daily Screener } \hfill Sep 2021 \\
-• Built command line app to automate the NYU Daily Screener via Selenium web automation
-\newline
-• Designed QT GUI for the application and used PyInstaller to build for Windows \newline
-• Highlighted in NYU Washington Square News
+% \textbf{\bf Auto Daily Screener } \hfill Sep 2021 \\
+% • Built command line app to automate the NYU Daily Screener via Selenium web automation
+% \newline
+% • Designed QT GUI for the application and used PyInstaller to build for Windows \newline
+% • Highlighted in NYU Washington Square News
 
 % \textbf{\bf Concussion Detection Device Project }, Tandon School of Engineering \hfill Sep 2020 - Dec 2020 \\
 % • Built Arduino-based IoT device to detect concussions for athletes using a pressure sensor
@@ -95,17 +101,14 @@
 % \newline
 % • Currently has 8 syllabi hosted with the ability for students to add their own 
 
-% \textbf{\bf Implemented Shortcut Feature in Dolphin } \hfill Oct 2020  \\%font is too big here
-% • Developed and implemented highly desired ‘Add Shortcut to Desktop’ feature to the open-source emulator Dolphin via the native Windows API, the Qt library, and C++
-% \newline
-% • Collaborated with other open-source contributors to refactor code and add it to Dolphin Emulator
 
 \end{rSection} 
 
 \begin{rSection}{Extra-Curricular Activities} 
 \begin{itemize} %left this because there was space to do this
-    \item 	Poly Programming Team
-    \item   Society of Asian Scientists and Engineers
+    \item   Rock Climbing Team - done multiple climbs and participated within the Student organization
+    \item 	Poly Programming Team - participated in programming challenges and competitions
+    % \item   Society of Asian Scientists and Engineers
 
 \end{itemize}
 

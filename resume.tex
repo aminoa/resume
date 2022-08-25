@@ -21,7 +21,7 @@
 
 \begin{rSection}{Education}
     {\bf New York University}, Tandon School of Engineering, Brooklyn, NY \hfill {May 2024}\\
-    Bachelor of Science, Major in Computer Science \hfill GPA: {\bf 3.70} \\
+    Bachelor of Science, Major in Computer Science, Minor in Mathematics \hfill GPA: {\bf 3.70} \\
     {\emph {Relevant Courses:}} {Machine Learning, Software Engineering, Databases, Algorithms, Operating Systems}
 \end{rSection}
 
@@ -31,8 +31,8 @@
 
 \begin{rSection}{SKILLS}
     \begin{tabular}{ @{} >{\bfseries}l @{\hspace{8ex}} l }
-        Languages & C++, Javascript, Python, Bash, C\#, Java, Powershell, Go \\
-        Frameworks/Libraries/OS & SDL, Qt, React, Node.js, PostgreSQL, Docker, Windows, Unix \\
+        Languages & C++, Javascript, Python, Bash, C\#, Java, Go \\
+        Frameworks/Libraries/OS & SDL, Qt, React, Node.js, PostgreSQL, Docker, Windows, Linux \\
     \end{tabular}
 \end{rSection}
 \smallskip
@@ -43,17 +43,18 @@
 \begin{rSection}{EXPERIENCE}
 
 \textbf{\bf MarketFusion}, {\emph{Software Engineering Intern}} \hfill July 2022 - Present\\
-• Revamped the login authentication system by implementing password strength checks and verification client-side via regex and server-side to ensure the security of the website. \newline
-• Rewrote React registration pages and user-creation process, sending a server request via the Axios library to update the internal MySQL database. \smallskip
+• Rewrote React registration pages and user-creation process, sending server requests via the Axios library to the internal MySQL database, allowing for creation of multiple user accounts. \newline
+• Revamped the login authentication system by implementing password strength checks and verification client-side via regex and server-side to ensure the security of the website. \smallskip
 
-\textbf{\bf Corelink High-Speed Research Network}, {\emph{Academic Researcher}} \ \hfill Sep 2021 - Present \\%maybe designed and implemented? (didn't do that because it wnould take another line)
-• Researched the Corelink network infrastructure and implemented a network packet splitter for UDP connections \newline
-• Coordinated students and assisted them with the management of their projects \newline    
+\textbf{\bf Corelink High-Speed Research Network}, {\emph{Academic Researcher}}\ \hfill Sep 2021 - Present \\
+• Implemented a UDP network packet splitter to enable researchers to bypass Corelink's MTU limit from 20000 to 64000 bytes, increasing maximum throughput by 220\% \newline
+% Improved network speeds by  Researched the Corelink network infrastructure and implemented a network packet splitter for UDP connections   \newline
+• Coordinated students within my team, assisting them with management of projects and checking meeting attendance \newline    
 • Researched Corelink’s network architecture and RDMA (Remote Direct Memory Access)/InfiniBand protocol and ran memory tests to determine the protocol's effectiveness for NYU researchers
 
 \textbf{\bf Monarc}, Dallas, TX, {\emph{Software Engineering Intern}} \hfill Aug 2021 - Jan 2022\\
-• Devised error checks and boot logging to improve Seeker performance and enable remote debugging \newline
-• Applied MVVM principles to develop new UI/UX features to enhance the Seeker machine feature-set \smallskip
+• Applied MVVM principles to develop ball-throw pages, allowing users to modify the thrown football speed/location \newline  % not enough room for full acronym
+• Devised error checks and boot logging to enable remote debugging, improving the stability of the Seeker machine \smallskip
 \end{rSection} 
 %----------------------------------------------------------------------------------------
 % Projects
@@ -63,44 +64,22 @@
 \textbf{\bf Chip8 Interpreter/Emulator } \hfill August 2022 \\
 • Designed interpreter for Chip8 platform by emulating all 35 standard opcodes and its specifications (registers, memory, timers), allowing Chip8 programs to run on an x86 platform \newline
 • Wrote separate disassembler to obtain assembly instructions from program binary data, assisting with development  \newline
-• Used SDL to write graphics renderer using SDL textures and handle user input \smallskip
-
-
-% \textbf{\bf NYU Syllabi } \hfill June 2022 \\
-% • Wrote Next.js web application to provide easy access to syllabi across different fields at NYU \newline
-% • Connected to AWS RDS PostgreSQL database, hosted on AWS S3 storage, and dockerized for deployment
+• Employed SDL library to write graphics renderer using SDL textures and handle user input \smallskip
 
 \textbf{\bf Alzheimer MRI Detection } \hfill May 2022 \\
 • Developed classification machine learning algorithm to sort preprocessed set of Alzheimer MRI images. 
 \newline
 • Tested using Sklearn library with three models - a logistic regression, support vector machine and convolutional neural network - with varying levels of regularization to determine which had the greatest accuracy 
 
-\textbf{\bf bkRoad - Amazon Lightsail Containers Hackathon } \hfill March 2022 \\
-• Won 2nd place in the hackathon \newline
+\textbf{\bf bkRoad - Amazon Lightsail Containers Hackathon - Overall 2nd Place } \hfill March 2022 \\
+% • Won 2nd place in the hackathon \newline
 • Wrote Next.js application that allowed users to discover books, learn details about them, and loan them. \newline
 • Handled connections to SQL Amazon DynamoDB and hosted on Amazon Lightsail
 
 \textbf{\bf Interview Automation - HackNYU} \hfill February 2022 \newline
-• A Next.js application to assist with interviewing candidates for the NYU Corelink team by providing scheduling, quizzing and management services\newline
-• Wrote React pages for the question page, admin creation page, and applicant information \newline
-• Handled authentication via Auth0 configuration of NYU SSO logon
-
-% \textbf{\bf Auto Daily Screener } \hfill Sep 2021 \\
-% • Built command line app to automate the NYU Daily Screener via Selenium web automation
-% \newline
-% • Designed QT GUI for the application and used PyInstaller to build for Windows \newline
-% • Highlighted in NYU Washington Square News
-
-% \textbf{\bf Concussion Detection Device Project }, Tandon School of Engineering \hfill Sep 2020 - Dec 2020 \\
-% • Built Arduino-based IoT device to detect concussions for athletes using a pressure sensor
-% \newline
-% • Developed code to detect pressure levels, change device LED color, and send email to parents/guardians notifying them of potential injury to athlete
-
-% \textbf{\bf Tandon Syllabi } \hfill October 2020 - Present \\%font is too big here
-% • Wrote online repository for syllabi and other class materials for the NYU Tandon School of Engineering, using React for the frontend
-% \newline
-% • Currently has 8 syllabi hosted with the ability for students to add their own 
-
+• Wrote Next.js React pages for creating questions and admins and  applicants info pages, assisting with interviewing candidates for NYU VIP Teams by providing scheduling, quizzing and management services\newline
+% • Wrote React pages for the  \newline
+• Handled authentication via Auth0 configuration of NYU SSO logon \smallskip
 
 \end{rSection} 
 
@@ -111,7 +90,6 @@
     % \item   Society of Asian Scientists and Engineers
 
 \end{itemize}
-
 
 \end{rSection}
 

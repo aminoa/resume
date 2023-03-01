@@ -1,6 +1,7 @@
 \documentclass{resume} % Use the custom resume.cls style
 
 \usepackage[left=0.5 in,top=0.4in,right=0.5 in,bottom=0.4in]{geometry} % Document margins
+\usepackage{hyperref}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{Aneesh Maganti} 
@@ -54,7 +55,7 @@
 • Scripted bash memory tests to determine the effectiveness of RDMA (Remote Direct Memory Access) 
 
 \textbf{Monarc}, Dallas, TX, {\emph{Software Engineering Intern}} \hfill Jun 2021 - Aug 2021 \\
-• Developed UWP desktop application pages using MVVM (Model-View View-Model) principles to manipulate a robotic football quarterback to throw balls at 5 placements and distances up to 100 yards\newline
+• Developed UWP desktop application pages using MVVM (Model-View View-Model) principles and C\# to manipulate a robotic football quarterback to throw balls at 5 placements and distances up to 100 yards\newline
 • Devised error checks and boot logging to enable remote debugging, improving the stability of the machine \smallskip
 \end{rSection} 
 %----------------------------------------------------------------------------------------
@@ -62,17 +63,17 @@
 %----------------------------------------------------------------------------------------
 \begin{rSection}{PROJECTS}
 
-\textbf{Cost Matrix Testing on Matrix Rescaling Optimal Transport Algorithms} \hfill Sep 2022 - Dec 2022 \\
+\textbf {\href{https://github.com/aminoa/gaussian_pot_tests}{Cost Matrix Testing on Matrix Rescaling Optimal Transport Algorithms}} \hfill Sep 2022 - Dec 2022 \\
 • Wrote research paper \emph{Application of Gaussian and Euclidean Cost Matrices to Matrix Rescaling Optimal Transport Algorithms} under Professor Christopher Musco to analyze different matrix rescaling algorithms\\ 
 • Implemented large test suite with varying cost matrices, datasets, and matrix scaling algorithms including two newly written greenkhorn variations with alternate row selection schemes using the Python OT library \\ 
 • Determined row selection in Greenkhorn was not relevant to the runtime, showing pathway for further research
 
-\textbf{Chip8 Interpreter/Emulator } \hfill August 2022 \\
+\textbf{\href{https://github.com/aminoa/chip8}{Chip8 Interpreter/Emulator}} \hfill August 2022 \\
 • Designed C++ interpreter for the Chip8 platform by emulating all 35 standard opcodes and its specifications (registers, memory, timers) after disassembling program binary data, allowing programs to run on an x86 platform \newline
 % • Wrote separate disassembler to obtain assembly instructions from program binary data, assisting with development  \newline
 • Employed SDL graphics library to write graphics renderer using SDL textures and handle user input \smallskip
 
-\textbf{Alzheimer MRI Detection } \hfill May 2022 \\
+\textbf{\href{https://github.com/trietvuive/MRI_Alzheimer}{Alzheimer MRI Detection}} \hfill May 2022 \\
 • Developed classification machine learning algorithm to sort preprocessed set of Alzheimer MRI images
 \newline
 • Tested using Python Sklearn library with three models - a logistic regression, support vector machine and convolutional neural network - with varying levels of regularization to determine which had the greatest accuracy 
@@ -87,7 +88,7 @@
 
 \begin{rSection}{Activities}
 % probably want to rewrite this
-\textbf{BUGS Open Source Club} (President): Coordinate student outreach, events and speakers, workshops, and meetings with other club board members and other tech clubs at NYU\\
+\textbf{\href{https://bugs-nyu.github.io/}{BUGS Open Source Club}} (President): Coordinate student outreach, events and speakers, workshops, and meetings with other club board members and other tech clubs at NYU\\
 \textbf{Rock Climbing Club} (Member): Partake in weekly climbs and meetups for fun and exercise
 
 \end{rSection}

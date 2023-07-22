@@ -4,12 +4,12 @@
 \usepackage{hyperref}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
-\name{Aneesh Maganti} 
+\name{Aneesh Maganti}
+
 
 %Headers
 \address { 
-    (312) 841-0636 • 
-    New York • 
+    312-841-0636 •
     \href{mailto:aneesh.maganti@nyu.com}{aneesh.maganti@nyu.edu} • 
     \href{github.com/aminoa}{github.com/aminoa} •
     \href{linkedin.com/in/aneesh-maganti}{linkedin.com/in/aneesh-maganti}
@@ -23,8 +23,8 @@
 
 \begin{rSection}{Education}
     \textbf{New York University}, Tandon School of Engineering, Brooklyn, NY \hfill {May 2024}\\
-    Bachelor of Science, Computer Science \hfill GPA: \textbf {3.71} \\
-    {\emph {Relevant Courses:}} {Algorithmic Machine Learning, Databases, Linear Algebra, Algorithms, Operating Systems}
+    Bachelor of Science, Computer Science, BS/MS Program \hfill GPA: \textbf {3.75} \\
+    {\emph {Relevant Courses:}} {Visualization in ML, Algorithmic Machine Learning, Networking, Databases, Algorithms, OS}
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
@@ -34,7 +34,7 @@
 \begin{rSection}{SKILLS}
     \begin{tabular}{ @{} >{\bfseries}l @{\hspace{8ex}} l }
         Languages & C++, Python, Javascript, C\#, Java, Bash, \\
-        Technologies & SDL, Next.js, React, Node, PostgreSQL, Sklearn, DynamoDB, Docker, Windows, Linux \\
+        Technologies & PyTorch, Next.js, QT, React, Node, PostgreSQL, Sklearn, Docker, Linux \\
     \end{tabular}
 \end{rSection}
 \smallskip
@@ -43,53 +43,68 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{EXPERIENCE}
-
 \textbf{MarketFusion}, Los Altos, CA, {\emph{Software Engineering Intern}} \hfill July 2022 - Sep 2022 \\
 • Developed client-side React.js web application registration and shopping pages for online food delivery service \\
 • Facilitated user account creation by sending server requests to internal MySQL database via the Axios library \\
 • Revamped login authentication by implementing 4 unique character password checks and a length requirement of 8-20 characters client-side via regular expressions and server-side to aid the security of the website 
 
-\textbf{Corelink High-Speed Research Network}, Brooklyn, NY, {\emph{Academic Research Intern}}\ \hfill Sep 2021 - May 2022 \\
+\textbf{Corelink}, Brooklyn, NY, {\emph{Software Engineering Intern}}\ \hfill Sep 2021 - May 2022 \\
 • Implemented a C++ UDP network packet splitter to enable researchers to bypass Corelink's MTU limit from 20,000 to 64,000 bytes, increasing maximum throughput by 220\% \newline
+• Designed Next.js/React interview scheduling platform using Auth0 for authentication and MongoDB backend \newline
 • Guided 3 students as a part of my team, assisting them with their project design and implementation \newline
 • Scripted bash memory tests to determine the effectiveness of RDMA (Remote Direct Memory Access) 
 
 \textbf{Monarc}, Dallas, TX, {\emph{Software Engineering Intern}} \hfill Jun 2021 - Aug 2021 \\
-• Developed UWP desktop application pages using MVVM (Model-View View-Model) principles and C\# to manipulate a robotic football quarterback to throw balls at 5 placements and distances up to 100 yards\newline
+• Developed C\# UWP desktop application pages using MVVM (Model-View View-Model) principles to manipulate a robotic football quarterback to throw balls at 5 placements and distances up to 100 yards \newline
 • Devised error checks and boot logging to enable remote debugging, improving the stability of the machine \smallskip
 \end{rSection} 
+
+\begin{rSection}{RESEARCH}
+
+\textbf {\href{https://github.com/aminoa/deltagonalshift}{Dynamic Diagonal Estimation}} \hfill Mar 2023 - Present \\
+• Designed and implemented a diagonal estimator for a dynamic matrix, DeltagonalShift, based on Hutchinson's diagonal estimator and the DeltaShift trace estimation algorithm \newline
+• Demonstrated Deltagonalshift was more effective than repeatedly running Hutchinson's diagonal estimator. \newline
+• Developing AdaHessian example via PyTorch to test Deltagonalshift compared to its current diagonal esimator
+
+\textbf {\href{https://github.com/aminoa/gaussian_pot_tests}{Cost Matrix Testing on Matrix Rescaling Optimal Transport Algorithms}} \hfill Sep 2022 - Dec 2022 \\
+• Wrote research paper under Professor Christopher Musco to analyze different matrix rescaling algorithms\\ 
+• Used Python OT library to implement large test suite with varying cost matrices, datasets, and matrix scaling algorithms including two newly written greenkhorn variations with alternate row selection schemes \\ 
+• Determined row selection in Greenkhorn was not relevant to the runtime, showing pathway for further research
+
+\end{rSection}
 %----------------------------------------------------------------------------------------
 % Projects
 %----------------------------------------------------------------------------------------
+
 \begin{rSection}{PROJECTS}
 
-\textbf {\href{https://github.com/aminoa/gaussian_pot_tests}{Cost Matrix Testing on Matrix Rescaling Optimal Transport Algorithms}} \hfill Sep 2022 - Dec 2022 \\
-• Wrote research paper \emph{Application of Gaussian and Euclidean Cost Matrices to Matrix Rescaling Optimal Transport Algorithms} under Professor Christopher Musco to analyze different matrix rescaling algorithms\\ 
-• Implemented large test suite with varying cost matrices, datasets, and matrix scaling algorithms including two newly written greenkhorn variations with alternate row selection schemes using the Python OT library \\ 
-• Determined row selection in Greenkhorn was not relevant to the runtime, showing pathway for further research
+\textbf {\href{https://github.com/aminoa/sentitweet/}{SentiTweet}} \hfill March 2023 - April 2023 \\
+• Created sentimental tweet generator via modified PyTorch PPLM library with GPT-2 to simulate conversations between Twitter users using natural language generation\\
+• Employed D3.js visualization library to create graph of tweets, their sentiments, and relationships 
+% • Wrote paper discussing implementation of SentiTweet, the D3 visualization, and previous work 
 
-\textbf{\href{https://github.com/aminoa/chip8}{Chip8 Interpreter/Emulator}} \hfill August 2022 \\
-• Designed C++ interpreter for the Chip8 platform by emulating all 35 standard opcodes and its specifications (registers, memory, timers) after disassembling program binary data, allowing programs to run on an x86 platform \newline
-% • Wrote separate disassembler to obtain assembly instructions from program binary data, assisting with development  \newline
-• Employed SDL graphics library to write graphics renderer using SDL textures and handle user input \smallskip
+% \textbf{\href{https://github.com/aminoa/dot-matrix}{Dot Matrix - Game Boy Emulator}} \hfill March 2023 \\
+% • Designed x86 C++ emulator for the Game Boy platform by implementing the 255 standard opcodes and their functionality (registers, memory, timers) \newline
+% • Wrote separate disassembler to obtain assembly instructions from program binary data \newline
+% • Employed SDL library to simulate the graphics renderer via SDL textures and handle user input 
 
-\textbf{\href{https://github.com/trietvuive/MRI_Alzheimer}{Alzheimer MRI Detection}} \hfill May 2022 \\
-• Developed classification machine learning algorithm to sort preprocessed set of Alzheimer MRI images
-\newline
-• Tested using Python Sklearn library with three models - a logistic regression, support vector machine and convolutional neural network - with varying levels of regularization to determine which had the greatest accuracy 
-
+% • Employed SDL graphics library to write graphics renderer using SDL textures and handle user input \smallskip
 % \textbf{bkRoad - Amazon Lightsail Containers Hackathon } \hfill March 2022 \\
 % • Won 2nd place in the hackathon \newline
 % • Wrote Next.js application that allowed users to search, learn details, and loan books using 5 React.js pages \newline
 % • Handled connections to a SQL Amazon DynamoDB and hosted on an Amazon Lightsail platform
-% \end{rSection} 
+% \end{rSection}
+% \textbf {NYU Syllabi} \hfill April 2023 - May 2023 \\
+% • Developed Next.js/React application to assist NYU students with finding syllabi across different schools \\
+% • Hosted Express.js API endpoint integrated with frontend using Next.js Router Handlers \\
+% • Set up PostgreSQL database on Amazon Web Service (AWS) RDS and connected to AWS S3 storage \\
+% • Deployed Next.js application using AWS Amplify Hosting
 
-\end{rSection}
+% \end{rSection}
 
-\begin{rSection}{Activities}
-% probably want to rewrite this
-\textbf{\href{https://bugs-nyu.github.io/}{BUGS Open Source Club}} (President): Coordinate student outreach, events and speakers, workshops, and meetings with other club board members and other tech clubs at NYU\\
-\textbf{Rock Climbing Club} (Member): Partake in weekly climbs and meetups for fun and exercise
+% \begin{rSection}{Activities}
+\textbf{\href{https://bugs-nyu.github.io/}{BUGS Open Source Club President}} (2022 - Present): Coordinate student outreach, events and speakers, workshops, and meetings with other club board members and other tech clubs at NYU\\
+% \textbf{Rock Climbing Club} (Member): Partake in weekly climbs and meetups for fun and exercise
 
 \end{rSection}
 

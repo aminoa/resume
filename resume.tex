@@ -9,7 +9,6 @@
 %Headers
 \address { 
     312-841-0636 •
-    % \href{mailto:aneesh.maganti@nyu.com}{aneesh.maganti@nyu.edu} • 
     \href{mailto:asmaganti@gmail.com}{asmaganti@gmail.com} • 
     \href{github.com/aminoa}{github.com/aminoa} •
     \href{linkedin.com/in/aneesh-maganti}{linkedin.com/in/aneesh-maganti}
@@ -43,9 +42,12 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{EXPERIENCE}
-\textbf{Qualcomm}, San Diego, CA, {\emph{Software Engineer Intern, AI Software/ML Group}} \hfill May 2024 - Present \\ 
-• Developed Memray-based memory monitor script to check IR graph converter/AIMET quantizer memory usage \\
-• Contributed IR Quantizer C++ API calls to reduce memory overhead by 50\% by referencing IR graph weights
+\textbf{Qualcomm}, San Diego, CA, {\emph{Software Engineer Intern, AI Software/ML Group}} \hfill May 2024 - Aug 2024 \\ 
+• Implemented memory optimizations across the Qualcomm AI Converter stack and AIMET Quantizer, reducing peak memory usage by 20-50\% across Memray benchmarked ResNet50, LLAMA2, and LLAMA3 models \\
+• Developed C++ PyBind API with Pytest to reference static model graph weights, halving in-memory allocations \\
+• Refactored quantized model export via PyTorch 'meta' device and aforementioned API, preventing graph copy
+% • Invoked PyTorch 'meta' device to prevent unnecessary random initialization of weights when  \\
+% • Prevent duplication of IR graph when applying quantized weights to IR graph, instead using previous IR graph already in memory, saving disk space as well as process runtime. \\
 
 \textbf{New York University}, Brooklyn, NY, {\emph{Teaching Assistant (Machine Learning)}} \hfill Sep 2023 - Dec 2023 \\
 • Instructed students weekly for machine learning topics of written and programming tasks through office hours \\
@@ -90,11 +92,6 @@
 % • Designed C++ capture the flag reverse engineering challenge for the Playstation 3 via docker PSL1GHT SDK \\
 % • Solution required Ghidra decompilation or usage of fail0verflow tools to determine exact controller inputs \\
 % • Released at start of NYU CSAW 2023 and solved by 5 out of 50 teams globally
-
-
-% \textbf{\href{https://github.com/aminoa/chip8}{Chip8 Emulator}} \hfill August 2022 \\
-% • Designed x86 C++ interpreter for the Chip8 platform by emulating its 35 standard opcodes and its specifications
-% • Wrote separate disassembler to obtain assembly instructions from program binary data
 
 \end{rSection}
 

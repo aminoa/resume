@@ -32,7 +32,7 @@
 \begin{rSection}{SKILLS}
     \begin{tabular}{ @{} >{\bfseries}l @{\hspace{8ex}} l }
         Languages & C++, Python, Javascript, C\#, Java, Bash \\
-        Technologies & Next.js, SDL, QT, React, Node, PostgreSQL, Sklearn, Docker, Linux \\
+        Technologies & PyTorch, Next.js, SDL, QT, React, Node, PostgreSQL, Sklearn, Docker, Linux \\
     \end{tabular}
 \end{rSection}
 \smallskip
@@ -41,32 +41,33 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{EXPERIENCE}
+
 \textbf{Qualcomm}, San Diego, CA, {\emph{Software Engineer Intern, AI Software/ML Group}} \hfill May 2024 - Aug 2024 \\ 
-• Implemented memory optimizations across the Qualcomm AI Converter/Quantizer stack, reducing peak memory usage by 20\% across benchmarked ResNet50 and LLAMA2 and LLAMA3 LLM models \\
-• Developed C++ PyBind API to reference static model graph weights, reducing in-memory allocations by 50\% \\
-• Refactored model export via PyTorch 'meta' device and aforementioned API changes, preventing graph copy
+• Implemented various memory optimizations across the Qualcomm AI Runtime (QAIRT), reducing peak memory usage by 20\% across benchmarked ResNet50 and LLAMA2 and LLAMA3 LLM models \\
+• Optimized AIMET quantization pipeline via C++ PyBind API to reference static graph tensors within Python subprocess, reducing in-memory allocations by 50\% \\
+• Refactored QAIRT/AIMET toolchain via PyTorch 'meta' device to prevent unnecessary weight initialization and modified model export to use in-memory IR graph, reducing disk space and improving runtime \smallskip
 
 \textbf{New York University}, Brooklyn, NY, {\emph{Teaching Assistant (Machine Learning)}} \hfill Sep 2023 - Dec 2023 \\
 • Instructed students weekly for machine learning topics of written and programming tasks through office hours \\
-• Graded weekly assignments on the basis of proper algorithm implementation, code correctness and style 
+• Graded weekly assignments on the basis of proper algorithm implementation, code correctness and style \smallskip
 
 \textbf {NYU Algorithms and Foundations Group}, Brooklyn, NY, {\emph{ML Academic Researcher}} \hfill Feb 2023 - Sep 2023 \\
 • Designed and implemented \textit{Deltagonalshift}, a diagonal estimator for a dynamic matrix under Professor Christopher Musco to improve neural network optimization based on DeltaShift trace estimation algorithm \newline
-• Demonstrated Deltagonalshift was more effective than repeatedly running Hutchinson's diagonal estimator
+• Demonstrated Deltagonalshift was more effective than repeatedly running Hutchinson's diagonal estimator \smallskip
 
 \textbf{MarketFusion}, Los Altos, CA, {\emph{Software Engineering Intern}} \hfill July 2022 - Sep 2022 \\
 • Developed client-side React.js web application registration and shopping pages for online food delivery service \\
-• Facilitated user account creation by sending server requests to internal MySQL database via the Axios library \\
-• Revamped login authentication by client-side via regular expressions and server-side to aid the website security 
+• Facilitated user account creation by sending server requests to internal MySQL database via the Axios library \smallskip
+% • Revamped login authentication by client-side via regular expressions and server-side to aid the website security 
 
 \textbf{Corelink}, Brooklyn, NY, {\emph{Software Engineer Intern}}\ \hfill Sep 2021 - May 2022 \\
 • Implemented a C++ UDP network packet splitter to enable researchers to bypass Corelink's MTU limit from 20,000 to 64,000 bytes, increasing maximum throughput by 220\% \newline
-• Designed Next.js/React interview scheduling platform using Auth0 for authentication and MongoDB backend \newline
-• Scripted bash memory tests to determine the effectiveness of RDMA (Remote Direct Memory Access) 
+• Designed Next.js/React interview scheduling platform using Auth0 for authentication and MongoDB backend 
+% • Scripted bash memory tests to determine the effectiveness of RDMA (Remote Direct Memory Access) 
 
-\textbf{Monarc}, Dallas, TX, {\emph{Software Engineer Intern}} \hfill Jun 2021 - Aug 2021 \\
-• Developed C\# UWP desktop application pages using MVVM (Model-View View-Model) principles to manipulate a robotic football quarterback to throw balls at 5 placements and distances up to 100 yards \newline
-• Devised error checks and boot logging to enable remote debugging, improving the stability of the machine \smallskip
+% \textbf{Monarc}, Dallas, TX, {\emph{Software Engineer Intern}} \hfill Jun 2021 - Aug 2021 \\
+% • Developed C\# UWP desktop application pages using MVVM (Model-View View-Model) principles to manipulate a robotic football quarterback to throw balls at 5 placements and distances up to 100 yards \newline
+% • Devised error checks and boot logging to enable remote debugging, improving the stability of the machine \smallskip
 \end{rSection} 
 
 %----------------------------------------------------------------------------------------
@@ -80,19 +81,19 @@
 • Led multiple workshops including discussion of open-source licenses, JavaScript Playwright automation, and an overview of emulation and the internals of C++ Game Boy emulator.\\
 • Developed Next.js-React website NYU Syllabi with Netlify hosting and Docusaurus-based NYU CS Wiki websites
 
+% \textbf{\href{https://github.com/osirislab/CSAW-CTF-2023-Finals/tree/main/rev/cell}{Cell - CSAW 2023 Finals Reverse Engineering CTF}} \hfill November 2023 \\
+% • Designed C++ capture the flag reverse engineering challenge for the Playstation 3 via Docker PSL1GHT SDK \\
+% • Solution required Ghidra decompilation or usage of fail0verflow tools to determine exact controller inputs \\
+% • Released at start of NYU CSAW 2023 and solved by 5 out of 50 teams globally
+
 \textbf{\href{https://github.com/aminoa/dot-matrix}{Dot Matrix - Game Boy Emulator}} \hfill August 2023 \\
 • Designed x86 C++ emulator for the Game Boy platform by implementing 255 standard + 240 cb instructions \\
 • Simulated hardware features including registers, graphics (SDL), memory, timers, interrupts, and input handling 
-
 % • Implementing Pixel Processing Unit timing methods and drawing functionality using SDL graphics library
-% \textbf {\href{https://github.com/aminoa/sentitweet/}{SentiTweet}} \hfill March 2023 - April 2023 \\
-% • Created sentimental tweet generator via modified PyTorch PPLM library with GPT-2 to simulate conversations between Twitter users using natural language generation\\
-% • Employed D3.js visualization library to create graph of tweets, their sentiments, and relationships 
 
-% \textbf{\href{https://github.com/osirislab/CSAW-CTF-2023-Finals/tree/main/rev/cell}{Cell - CSAW 2023 Finals Reverse Engineering CTF}} \hfill November 2023 \\
-% • Designed C++ capture the flag reverse engineering challenge for the Playstation 3 via docker PSL1GHT SDK \\
-% • Solution required Ghidra decompilation or usage of fail0verflow tools to determine exact controller inputs \\
-% • Released at start of NYU CSAW 2023 and solved by 5 out of 50 teams globally
+\textbf {\href{https://github.com/aminoa/sentitweet/}{SentiTweet}} \hfill March 2023 - April 2023 \\
+• Created sentimental tweet generator via modified PyTorch PPLM library with GPT-2 to simulate conversations between Twitter users using natural language generation\\
+• Employed D3.js visualization library to create graph of tweets, their sentiments, and relationships 
 
 \end{rSection}
 

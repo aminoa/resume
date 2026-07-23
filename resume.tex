@@ -21,9 +21,9 @@
 \begin{rSection}{EXPERIENCE}
 
 \textbf{Affirm}, New York City, NY, {\emph{Software Engineer, Traffic Engineering}} \hfill July 2025 - Present \\
-• Orchestrated the migration of External Secrets Operator (ESO) from v0.7.2 to v0.20.2 across 72 Kubernetes clusters, leveraging a Controller Class mechanism to run multiple concurrent operators and manage diverse secret types including Affirm service, infra, and internal secrets. \\
-• Rewrote a core Kubernetes build tool in Rust using Claude-driven agentic workflow, slashing Helm chart build times by 78\% (from 14 minutes to 3 minutes); successfully drove team-wide adoption of the tool and mentored external contractor to execute over 40 high-velocity deployments. \\
-• Spearheaded the Cert-Manager upgrade and modernised secret management by developing Terraform configurations for dynamic key generation and implementing agent-driven update flows
+• Built self-serve secrets decryption service on AWS Lambda, reimplementing three-layer envelope decryption (KEK/DEK) with separate IAM ReaderRoles; automated 40 requests/month, eliminating 60 hours/year of toil. \\
+• Rewrote a core Kubernetes manifest build tool in Rust using agentic workflow, slashing Helm chart build times by 78\% (from 14 minutes to 3 minutes); successfully drove team-wide adoption of the tool. \\
+• Orchestrated the migration of External Secrets Operator (ESO) from v0.7.2 to v0.20.2 across 72 Kubernetes clusters, leveraging a Controller Class mechanism to run concurrent operators and manage diverse secret types.
 
 \textbf{Qualcomm}, San Diego, CA, {\emph{Software Engineer Intern, AI Software/ML Group}} \hfill May 2024 - Aug 2024 \\
 • Implemented various memory optimizations across the Qualcomm AI Runtime (QAIRT), reducing peak memory usage by 20\% across benchmarked ResNet50 and LLAMA2 and LLAMA3 LLM models \\
@@ -67,18 +67,15 @@
 
 \begin{rSection}{PROJECTS/ACTIVITIES}
 
+\textbf{\href{https://github.com/aminoa/dot-matrix}{Dot Matrix - Game Boy Emulator}} \hfill June 2025 - Present \\
+• Re-architected my C++ Game Boy emulator into idiomatic Rust (CPU, MMU, PPU, APU, cartridge, joypad, and renderer modules), driving the system from a cycle-stepped fetch-execute loop with full interrupt handling and accurate timer/clock emulation, and verified CPU correctness against Blargg's cpu\_instrs test ROM suite. \\
+• Built a scanline-based PPU implementing the four-mode LCD state machine (OAM scan, pixel transfer, H-Blank, V-Blank) with background, window, and sprite rendering output through a minifb framebuffer. \\
+• Added MBC1 ROM/RAM bank switching, joypad input, audio output, and save states, enabling playback of commercial titles.
+
 \textbf{\href{https://bugs-nyu.github.io/}{BUGS Open Source Club President}} \hfill Sep 2022 - Dec 2023 \\
 • Started and led 50+ member club by coordinating biweekly workshop and project coding events to discuss software engineering skills, foster contributions to open source, and create a fun, inclusive CS community.\\
 • Led multiple workshops including discussion of open-source licenses, JavaScript Playwright automation, and an overview of emulation and the internals of C++ Game Boy emulator.\\
 • Developed Next.js-React website NYU Syllabi with Netlify hosting and Docusaurus-based NYU CS Wiki websites
-
-\textbf{\href{https://github.com/aminoa/dot-matrix}{Dot Matrix - Game Boy Emulator}} \hfill August 2023 \\
-• Designed x86 C++ emulator for the Game Boy platform by implementing 255 standard + 240 cb instructions \\
-• Simulated hardware features including registers, graphics (SDL), memory, timers, interrupts, and input handling
-
-% \textbf {\href{https://github.com/aminoa/sentitweet/}{SentiTweet}} \hfill March 2023 - April 2023 \\
-% • Created sentimental tweet generator via modified PyTorch PPLM library with GPT-2 to simulate conversations between Twitter users using natural language generation\\
-% • Employed D3.js visualization library to create graph of tweets, their sentiments, and relationships
 
 \end{rSection}
 

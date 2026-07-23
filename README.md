@@ -1,3 +1,3 @@
 # Resume
 
-My resume was written in LaTeX; after, a GH actions script will build it into a PDF and place it in this repo.
+My resume is written in LaTeX; once I update `resume.tex`, I build the PDF and then push both artifacts.

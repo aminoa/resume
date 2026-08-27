@@ -21,7 +21,7 @@
 \begin{rSection}{EXPERIENCE}
 
 \textbf{Affirm}, New York City, NY, {\emph{Software Engineer, Traffic Engineering}} \hfill July 2025 - Present \\
-• Built self-serve secrets decryption service on AWS Lambda, reimplementing three-layer envelope decryption (KEK/DEK) with separate IAM ReaderRoles; automated 40 requests/month, eliminating 60 hours/year of toil. \\
+• Built a self-serve secrets decryption service via on AWS Lambda driven by an agentic workflow to parse and extract secret metadata, reimplementing three-layer envelope decryption (KEK/DEK) with separate IAM ReaderRoles; automated 40 requests/month, eliminating 60 hours/year of toil. \\
 • Rewrote a core Kubernetes manifest build tool in Rust using agentic workflow, slashing Helm chart build times by 78\% (from 14 minutes to 3 minutes); successfully drove team-wide adoption of the tool. \\
 • Orchestrated the migration of External Secrets Operator (ESO) from v0.7.2 to v0.20.2 across 72 Kubernetes clusters, leveraging a Controller Class mechanism to run concurrent operators and manage diverse secret types.
 
@@ -37,11 +37,6 @@
 \textbf {NYU Algorithms and Foundations Group}, Brooklyn, NY, {\emph{ML Academic Researcher}} \hfill Feb 2023 - Sep 2023 \\
 • Designed and implemented \textit{Deltagonalshift}, a diagonal estimator for a dynamic matrix under Professor Christopher Musco to improve neural network optimization based on DeltaShift trace estimation algorithm \newline
 • Demonstrated Deltagonalshift was more effective than repeatedly running Hutchinson's diagonal estimator \smallskip
-
-% \textbf{MarketFusion}, Los Altos, CA, {\emph{Software Engineering Intern}} \hfill July 2022 - Sep 2022 \\
-% • Developed client-side React.js web application registration and shopping pages for online food delivery service \\
-% • Facilitated user account creation by sending server requests to internal MySQL database via the Axios library \smallskip
-% • Revamped login authentication by client-side via regular expressions and server-side to aid the website security
 
 \textbf{Corelink}, Brooklyn, NY, {\emph{Software Engineer Intern}}\ \hfill Sep 2021 - May 2022 \\
 • Implemented a C++ UDP network packet splitter to enable researchers to bypass Corelink's MTU limit from 20,000 to 64,000 bytes, increasing maximum throughput by 220\% \newline
@@ -70,7 +65,7 @@
 \textbf{\href{https://github.com/aminoa/dot-matrix}{Dot Matrix - Game Boy Emulator}} \hfill June 2025 - Present \\
 • Re-architected my C++ Game Boy emulator into idiomatic Rust (CPU, MMU, PPU, APU, cartridge, joypad, and renderer modules), driving the system from a cycle-stepped fetch-execute loop with full interrupt handling and accurate timer/clock emulation, and verified CPU correctness against Blargg's cpu\_instrs test ROM suite. \\
 • Built a scanline-based PPU implementing the four-mode LCD state machine (OAM scan, pixel transfer, H-Blank, V-Blank) with background, window, and sprite rendering output through a minifb framebuffer. \\
-• Added MBC1 ROM/RAM bank switching, joypad input, audio output, and save states, enabling playback of commercial titles.
+• Added MBC1 ROM/RAM bank switching, input, audio, and save states, enabling playback of commercial titles.
 
 \textbf{\href{https://bugs-nyu.github.io/}{BUGS Open Source Club President}} \hfill Sep 2022 - Dec 2023 \\
 • Started and led 50+ member club by coordinating biweekly workshop and project coding events to discuss software engineering skills, foster contributions to open source, and create a fun, inclusive CS community.\\
